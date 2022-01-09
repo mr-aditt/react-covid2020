@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.w_90per{
+    width: 90%;
+}
+
+.h_40px{    
+    height: 40px;
+}
+
+.overall-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    position: fixed;
+    bottom: 10px;
+    left: 5vw;
+}
+
+.overall-container div {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.country {
+    font-size: 30px;
+    font-weight: 700;
+    color: #E23129;
+    background-color: #FDF2F2;
+    text-align: center;
+    width: max-content;
+    padding: 0 5px;
+}
+
+.date {
+    color: #A8ADB1;
+    font-size: 13px;
+}
+
+.total {
+    text-align: right;
+    color: #3F3AAE;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.color_ADABDC {
+    text-align: right;
+    color: #9f9dce;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.2px;
+}
+
+.search-container {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    margin: 15% auto;
+    text-align: center;
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #979DA3;
+}
+
+.search-container>div:nth-child(odd){
+    display: block;
+    margin: 0 auto;
+    width: 40vw;
+    box-shadow: 10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+    -10px 0px 20px 1px rgba(107, 107, 107, 0.1),
+    0px 10px 20px 1px rgba(107, 107, 107, 0.1);
+}
+
+
+.search-container>div>span {
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.search-icon {
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.search-container>div>input {
+    outline: 0;
+    border: 0;
+    margin-left: 2px;
+    font-size: 20px;
+}
+
+.output {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60vw;
+    margin: 20px auto;
+}
+
+.output>div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.stats-containers {
+    padding: 0.5em 0;
+    width: 15vw;
+}
+
+.stats-containers>span{
+    display: block;
+}
+
+.confirmed {
+    color: #ff1043;
+    background-color: #fedede;
+}
+
+.active {
+    color: #037aff;
+    background-color: #deeefe;
+}
+
+.recovered {
+    color: #33ab4f;
+    background-color: #defede ;
+}
+
+.deceased {
+    color: #6c767f;
+    background-color: #dadada;
+}
+
+.stats-head {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.stats-current {
+    font-weight: 600;
+    font-size: 25px;
+}
