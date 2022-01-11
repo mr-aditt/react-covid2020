@@ -178,6 +178,11 @@ nav div button {
     display: block;
 }
 
+.stats-containers>span:nth-child(2){
+    background-color: black;
+    height: 40px;
+}
+
 .confirmed {
     color: #ff1043;
 }
@@ -209,9 +214,6 @@ nav div button {
 }
 
 /* STATE COMPONENT */
-
-
-
 table {
     color: #6a6f74;
     margin: 2rem auto;
