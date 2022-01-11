@@ -139,7 +139,6 @@ nav div button {
 }
 
 .output {
-    /* background-color: red; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -179,7 +178,6 @@ nav div button {
 }
 
 .stats-containers>span:nth-child(2){
-    background-color: black;
     height: 40px;
 }
 
