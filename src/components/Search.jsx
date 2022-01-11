@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import stateCodes from '../resources/state_code.json';
 import Graph from './graph/graph';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export default function Search() {
     const [data, setData] = useState();
@@ -58,7 +60,7 @@ export default function Search() {
             item.name.toLowerCase() === e.target.value.toLowerCase())[0];
         const code = (dict) ? dict.code : null;
         
-        // State code is not present in State-code.json
+        // State code is not present in State_code.json
         // Therefore, entered value is not a state, but 
         // most probably a district
         if (!code) {
@@ -140,10 +142,7 @@ export default function Search() {
             Search your district or state
             <div className='search-box-container'>
                 <span className='search-icon-container'>
-                    <box-icon className='search-icon'
-                        name='search-alt-2'
-                        color="grey"
-                        size="md"></box-icon>
+                    <FontAwesomeIcon icon={faSearch} size='lg'/>
                 </span>
                 <input className='search-box w_90per h_40px'
                     type="text" id="header-search"

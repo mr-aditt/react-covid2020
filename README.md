@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+![Image description](https://i1.faceprep.in/ProGrad/prograd-logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ProGrad Lab | REACT - COVID2020
 
-## Available Scripts
+## Learning Goals
 
-In the project directory, you can run:
+In this exercise, the goal is to learn api's in react:
 
-### `npm start`
+- Axios,
+- REST API,
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Fork this repo
+2. Clone this repo
 
-### `npm test`
+Whenever you create a first significant change, you should make your first commit.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Follow these [guidelines to add, commit and push changes](https://github.com/FACEPrep-ProGrad/general-guidelines-labs-project-builders.git).
 
-### `npm run build`
+In the end of this document, you will find guidelines on how to submit the exercise.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instructions
+In this lab we will try to work with API's in react. The main idea of this lab is to fetch details from external API, process it and display it. We have 4 components. One parent component `HomeComponent` and 3 child components 
+- OverallComponent
+- SearchComponent
+- StateComponent
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The main theme behind the lab is to fetch book details and display it for reading. They can like it or dislike it after they have read it. So let's start building it.
+```API DETAILS
+https://api.covid19india.org/
+```
+Kindly see the output:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Image description](https://i1.faceprep.in/ProGrad/l6.coronatracker2.png)
+![Image description](https://i1.faceprep.in/ProGrad/l6.coronatracker1.png)
+![Image description](https://i1.faceprep.in/ProGrad/l6.coronatracker3.png)
 
-### `npm run eject`
+### PROGRESSION 1 | I AM THE PARENT
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a parent component called `HomeComponent` with three child components inside it
+- OverallComponent
+- SearchComponent
+- StateComponent
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### PROGRESSION 2 | INDIA FIGHTS COVID
+Just display the overall covid details as given below.
+![Image description](https://i1.faceprep.in/ProGrad/l6.coronatracker2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### PROGRESSION 3 | SEARCH
+Keep a search bar to find the particular state wise COVID tally.
+![Image description](https://i1.faceprep.in/ProGrad/l6.coronatracker1.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### PROGRESSION 3 | STATE WISE
+Display the statewise covid details.
+![Image description](https://i1.faceprep.in/ProGrad/l6.coronatracker3.png)
 
-## Learn More
+### PROGRESSION 4 | MEASURE THE RECOVERY RATIO
+Based on the `COVID ACTIVE CASES` and `RECOVERED CASES`. Find out the recovery ratio and display it at the side.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### PROGRESSION 5 | RANK BASED ON RECOVERY RATIO
+Based on the recovery ration sort the states.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### BONUS | STYLING
+You are free to do a complete styling if you want.
 
-### Code Splitting
+## Submission
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you didn't add, commit and push the changes you made, this is the last call. :smile:
 
-### Analyzing the Bundle Size
+please share your github links with your Mentors. Your Mentor's will check up your work and provide feedback. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Summary
 
-### Making a Progressive Web App
+If you managed to do it, good job! :trophy:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+We are proud of you!
 
-### Advanced Configuration
+Happy Coding ProGrad ❤️!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

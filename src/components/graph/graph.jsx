@@ -1,5 +1,5 @@
 import React from 'react';
-import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, ResponsiveContainer } from 'recharts';
 
 
 export default function Graph({plotData, field, color}) {
@@ -10,11 +10,6 @@ export default function Graph({plotData, field, color}) {
           height={200}
           data={plotData}
         >
-          {/* <CartesianGrid strokeDasharray="3 3" /> */}
-          {/* <XAxis dataKey="name" /> */}
-          {/* <YAxis /> */}
-          <Tooltip />
-          {/* <Legend /> */}
           <Line dataKey={field} stroke={color} strokeWidth={3} dot={false}/>
         </LineChart>
       </ResponsiveContainer>
